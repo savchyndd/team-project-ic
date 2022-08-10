@@ -1,2 +1,45 @@
-@import './common';
-@import './example';
+// Normalize
+@import '~/node_modules/modern-normalize/modern-normalize.css';
+
+// Utils
+@import './utils/vars';
+@import './utils/mixin';
+@import './utils/adaptive-mixin';
+@import './utils/visually-hidden';
+
+// Base styles
+@import './base/reset';
+@import './base/global';
+
+// Components
+// Header
+@import './components/header';
+// Mobile menu
+@import './components/mobile-menu';
+
+// Hero
+@import './components/hero';
+
+// Products
+@import './components/products';
+
+// About
+@import './components/about';
+
+// Advantages
+@import './components/advantages';
+
+// Gallary
+@import './components/gallery';
+
+// Customer Reviews
+@import './components/customer-reviews';
+
+// Contacts
+@import './components/contacts';
+
+// Footer
+@import './components/footer';
+
+// Modal window
+@import './components/modal-order';

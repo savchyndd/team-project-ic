@@ -1,0 +1,69 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--white-color);
+}
+
+body.modal-order-open,
+body.mobile-menu-open {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Titan One', cursive;
+    text-transform: uppercase;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @include for-tablet-up {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    @include for-desktop-up {
+        max-width: 1200px;
+        padding: 0 16px;
+    }
+}
+
+// Styles button (type: button)
+.btn {
+    display: flex;
+    align-items: center;
+
+    padding: 14px 37px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    color: var(--red-color);
+
+    background-color: var(--white-color);
+    border-radius: 22px;
+}
+
+.btn__icon {
+    margin-left: 12px;
+}
+
+.btn--red {
+    color: var(--white-color);
+    background-color: var(--red-color);
+}

@@ -5,6 +5,14 @@
   padding: 0;
   list-style: none;
   margin-top: 0;
+
+  @media screen and (min-width: 767.98px) {
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (min-width: 1199.98px) {
+    width: 100%;
+  }
 }
 
 .contacts-item {
@@ -29,7 +37,7 @@
     color: var(--white-color);
 
     &--green {
-      background:var(--green-color);
+      background: var(--green-color);
     }
   }
 
@@ -101,6 +109,12 @@
   justify-content: center;
   gap: 10px;
   margin-top: 32px;
+
+  @media screen and (min-width: 767.98px) {
+    flex-direction: row;
+    margin-top: 60px;
+    margin-right: 14,5px;
+  }
 
   .button {
     width: 162px;

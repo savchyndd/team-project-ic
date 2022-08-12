@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    
     @include for-desktop-up {
       flex-direction: row;
     }
@@ -45,6 +46,7 @@
       .button {
         width: 180px;
         justify-content: center;
+        cursor: pointer;
       }
     }
   }

@@ -25,6 +25,10 @@
   @include for-tablet-up {
     width: calc(33.3333333333% - 20px);
     height: 538px;
+    padding: 40px 32px;
+  }
+
+  @include for-desktop-up {
     padding: 40px;
   }
 

@@ -1,0 +1,112 @@
+[data-modal-contacts-franchise] {
+  .modal {
+    background-color: rgb(236, 219, 221);
+    min-height: auto;
+  }
+
+  .franchise-form {
+    background-color: var(--white-color);
+
+    width: 270px;
+    // height: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+
+    @include for-tablet-up {
+      width: 600px;
+    }
+
+    @include for-desktop-up {
+      width: 700px;
+    }
+  }
+
+  .franchise-title {
+    color: var(--red-color);
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    border-bottom: 2px solid var(--pink-color);
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 22px;
+
+    @include for-tablet-up {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    @include for-desktop-up {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  input:focus {
+    border-bottom: 2px solid var(--green-color);
+  }
+
+  p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: var(--grey-color);
+  }
+
+  .button-wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .franchise-button {
+    // float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid var(--red-color);
+    border-radius: 22px;
+    background: 0;
+    color: var(--grey-color);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .franchise-button:hover {
+    background: var(--red-color);
+    color: var(--white-color);
+  }
+
+  .franchise-contacts {
+    content: 'Hi';
+    position: absolute;
+    bottom: -35px;
+    right: -10px;
+    background: rgb(236, 213, 216);
+    color: var(--red-color);
+    width: 250px;
+    padding: 16px 4px 16px 0;
+    border-radius: 22px;
+    font-size: 12px;
+    box-shadow: 10px 10px 40px -14px #000;
+    text-align: center;
+
+    &__link {
+      display: inline-block;
+      margin: 0 5px 0 15px;
+
+      &--last {
+        margin-top: 10px;
+      }
+    }
+  }
+}

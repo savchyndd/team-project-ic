@@ -1,2 +1,0 @@
-!function(){var e={mobileMenuBtnRef:document.querySelector("[data-menu-btn]"),mobileMenuRef:document.querySelector("[data-menu]")};e.mobileMenuBtnRef.addEventListener("click",(function(){var t="true"===e.mobileMenuBtnRef.getAttribute("aria-expanded")||!1;e.mobileMenuBtnRef.classList.toggle("is-open"),e.mobileMenuBtnRef.setAttribute("aria-expanded",!t),e.mobileMenuRef.classList.toggle("is-open"),document.body.classList.toggle("mobile-menu-open")}))}();
-//# sourceMappingURL=index.ad34d339.js.map

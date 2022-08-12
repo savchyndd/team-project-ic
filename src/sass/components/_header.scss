@@ -1,12 +1,12 @@
 .header-decor {
   padding-top: 0;
+  padding-bottom: 0;
   background-color: var(--bg-first-color);
 }
 
 .header {
   display: flex;
   align-items: center;
-  border: 2px solid black;
 }
 
 .header-padding {
@@ -24,7 +24,6 @@
 .site-nav {
   display: flex;
   align-items: center;
-
 }
 
 .logo {
@@ -33,14 +32,6 @@
     margin-right: 128px;
   }
 }
-
-// .logo__link {
-
-// }
-
-// .logo__icon {
-//   margin-top: 40px;
-// }
 
 .site-nav__list {
   display: none;
@@ -66,8 +57,7 @@
   line-height: 1.31;
 
   &:hover {
-    color: var(--red-color);
-    
+    color: var(--red-color);    
   }
 }
 
@@ -95,14 +85,11 @@
   margin-left: 12px;
 }
 
-
 // Mobil-menu
 .menu-toggle {
   margin-left: auto;
-
-  // @media screen and (min-width: 768px) {
-  //   margin-right: 32px;
-  // }
+  background-color: var(--bg-first-color);
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     margin-right: 32px;
@@ -112,6 +99,7 @@
   }
 }
 
-.menu-container {
+.menu-container {  
+display: none;
   background-color: var(--bg-first-color);
 }

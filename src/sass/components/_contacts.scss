@@ -9,10 +9,6 @@
   @media screen and (min-width: 767.98px) {
     flex-wrap: nowrap;
   }
-
-  @media screen and (min-width: 1199.98px) {
-    width: 100%;
-  }
 }
 
 .contacts-item {
@@ -22,6 +18,15 @@
   width: 280px;
   padding: 40px 32px;
   border: 1px solid red;
+
+  @include for-tablet-up {
+    width: calc(33.3333333333% - 20px);
+    height: 538px;
+    padding: 40px;
+  }
+  // @media screen and (min-width: 1199.98px) {
+
+  // }
 
   &__label {
     padding: 0px 25px;
@@ -39,6 +44,16 @@
     &--green {
       background: var(--green-color);
     }
+
+    @include for-tablet-up {
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    @include for-desktop-up {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
 
   &__title {
@@ -48,6 +63,16 @@
     line-height: 22px;
     letter-spacing: 0.04em;
     color: var(--black-color);
+
+    @media screen and (min-width: 767.98px) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    @media screen and (min-width: 1199.98px) {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
 
   &__description {
@@ -57,6 +82,16 @@
     font-size: 12px;
     line-height: 18px;
     color: var(--grey-color);
+
+    @media screen and (min-width: 767.98px) {
+      font-size: 14px;
+      line-height: 23px;
+    }
+
+    @media screen and (min-width: 1199.98px) {
+      font-size: 16px;
+      line-height: 29px;
+    }
   }
 
   &_devider {
@@ -74,6 +109,16 @@
     &--last {
       margin-top: 8px;
     }
+
+    @media screen and (min-width: 767.98px) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    @media screen and (min-width: 1199.98px) {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
 
   &__working-hours {
@@ -85,6 +130,16 @@
 
     &--last {
       margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 767.98px) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    @media screen and (min-width: 1199.98px) {
+      font-size: 16px;
+      line-height: 30px;
     }
   }
 
@@ -99,9 +154,18 @@
     &--email {
       margin-top: 0px;
     }
+
+    @media screen and (min-width: 767.98px) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    @media screen and (min-width: 1199.98px) {
+      font-size: 16px;
+      line-height: 29px;
+    }
   }
 }
-
 .contacts-button-wrap {
   display: flex;
   flex-direction: column;
@@ -113,7 +177,7 @@
   @media screen and (min-width: 767.98px) {
     flex-direction: row;
     margin-top: 60px;
-    margin-right: 14,5px;
+    margin-right: 14, 5px;
   }
 
   .button {
@@ -128,7 +192,6 @@
     &__icon {
       margin-top: 2px;
       stroke: var(--white-color);
-
       &--red {
         margin-top: 2px;
         stroke: var(--red-color);

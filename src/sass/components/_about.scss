@@ -2,8 +2,9 @@
     background-image: url(../images/about-bg/adv-bg_desktop.png);
     background-repeat: no-repeat;
     background-size: 280px;
-    background-position: 50% 73%;
+    background-position: 50% 74%;
     background-color: var(--bg-second-color);
+    padding-bottom: 40px;
     
     @media (min-width: 768px) {
         background-image: none;
@@ -29,6 +30,7 @@
     margin-right: auto;
     text-transform: uppercase;
     color: var(--pink-color);
+    margin-top: 15px;
 
     @media (min-width: 768px) {
         font-size: 26px;
@@ -54,7 +56,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--red-color);
-    margin-top: 16px;
 
     @media (min-width: 768px) {
         font-size: 48px;
@@ -135,6 +136,7 @@
     font-size: 12px;
     line-height: 1.62;
     color: var(--black-color);
+    margin-bottom: 24px;
 
     @media (min-width: 768px) {
         font-size: 14px;
@@ -161,6 +163,11 @@
     @media (min-width: 1200px) {
         line-height: 1.94;
     }
+}
+
+.about-paragraphs__description:last-child {
+    margin-bottom: 0;
+
 }
 
 .about-paragraphs__btn {
@@ -190,7 +197,6 @@
 }
 
 .about-paragraphs__btn-svg {
-    margin-left: 10px;
     stroke: var(--red-color);
 }
 

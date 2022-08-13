@@ -27,7 +27,6 @@
 }
 
 .logo {
-
   @media screen and (min-width: 1200px) {
     margin-right: 128px;
   }
@@ -42,11 +41,9 @@
 }
 
 .site-nav__item {
-
   &:not(last-child) {
     margin-right: 35px;
   }
-
 }
 
 .site-nav__link {
@@ -57,7 +54,7 @@
   line-height: 1.31;
 
   &:hover {
-    color: var(--red-color);    
+    color: var(--red-color);
   }
 }
 
@@ -71,19 +68,19 @@
     background-color: var(--hover-color);
   }
 
-  @media  screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
-  @media  screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
-
 }
 
 .site-nav__btn-icon {
-  stroke: var(--red-color);
   margin-left: 12px;
+
+  stroke: var(--red-color);
 }
 
 // Mobil-menu
@@ -95,6 +92,7 @@
   @media screen and (min-width: 768px) {
     margin-right: 32px;
   }
+
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -132,10 +130,6 @@
   max-width: 320px;
   align-items: center;
   justify-content: center;
-}
-
-.site-nav__btn-icon {
-  margin-left: 32px;
 }
 
 .mobil-navi__item {

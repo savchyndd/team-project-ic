@@ -1,3 +1,7 @@
+.section-contacts {
+  background-color: var(--bg-second-color);
+}
+
 .contacts-list {
   display: flex;
   flex-wrap: wrap;
@@ -210,13 +214,12 @@
   font-size: 16px;
   line-height: 21px;
   cursor: pointer;
-
-  &-icon {
+}
+.contacts__btn-icon {
+  margin-top: 2px;
+  stroke: var(--white-color);
+  &--red {
     margin-top: 2px;
-    stroke: var(--white-color);
-    &--red {
-      margin-top: 2px;
-      stroke: var(--red-color);
-    }
+    stroke: var(--red-color);
   }
 }

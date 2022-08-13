@@ -1,3 +1,79 @@
-<section class="section">
-  <div class="container"></div>
+<section class="section header-decor">
+  <div class="container">
+    <header class="header header-padding">
+      <nav class="site-nav">
+        <div class="logo">
+          <a href="" class="logo__link">
+            <svg class="logo__icon" width="199" height="50">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">About us</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">How it’s made?</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Our products</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobil-icon--open" width="20" height="12">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <button class="site-nav__btn btn" type="button">
+        Buy now
+        <svg class="site-nav__btn-icon" width="20" height="12">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </header>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu" type="button">
+      <svg class="mobil-icon--close" width="14" height="14">
+        <use href="./images/icons.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <button class="mobil-nav__btn btn" type="button" data-modal-order-open>
+      Buy now
+      <svg class="site-nav__btn-icon" width="20" height="12">
+        <use href="./images/icons.svg#icon-arrow"></use>
+      </svg>
+    </button>
+    <nav class="mobil-navi">
+      <ul class="mobil-navi__list">
+        <li class="mobil-navi__item">
+          <a class="mobil-navi__link" href="#">Home</a>
+        </li>
+        <li class="mobil-navi__item">
+          <a class="mobil-navi__link" href="#">About us</a>
+        </li>
+        <li class="mobil-navi__item">
+          <a class="mobil-navi__link" href="#">How it’s made?</a>
+        </li>
+        <li class="mobil-navi__item">
+          <a class="mobil-navi__link" href="#">Our products</a>
+        </li>
+        <li class="mobil-navi__item">
+          <a class="mobil-navi__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </section>

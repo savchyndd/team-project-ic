@@ -60,6 +60,8 @@ h4 {
 
     background-color: var(--white-color);
     border-radius: 22px;
+
+    stroke: var(--red-color);
 }
 
 .btn__icon {
@@ -68,5 +70,8 @@ h4 {
 
 .btn--red {
     color: var(--white-color);
+
     background-color: var(--red-color);
+
+    stroke: var(--white-color);
 }

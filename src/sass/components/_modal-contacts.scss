@@ -1,0 +1,55 @@
+[data-modal-contacts] {
+  .display-none {
+    display: none;
+  }
+  .modal {
+    background-color: #f3d6da;
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+      @include for-desktop-up {
+        flex-direction: row;
+      }
+      .map-wrap {
+        width: 270px;
+        height: 400px;
+        @include for-tablet-up {
+          width: 700px;
+        }
+        @include for-desktop-up {
+          width: 900px;
+          height: 650px;
+        }
+        iframe {
+          border-radius: 25px;
+        }
+      }
+
+      .buttons-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 10px;
+        @include for-tablet-only {
+          width: 700px;
+          flex-direction: row;
+          justify-content: center;
+        }
+        @include for-desktop-up {
+          margin-left: 30px;
+          margin-top: 0;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+        .button {
+          width: 180px;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

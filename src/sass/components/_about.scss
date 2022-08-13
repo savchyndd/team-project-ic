@@ -1,8 +1,8 @@
 .section-container {
     background-image: url(../images/about-bg/adv-bg_desktop.png);
-    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 74%;
+    background-size: 280px;
+    background-position: 50% 73%;
     background-color: var(--bg-second-color);
     
     @media (min-width: 768px) {
@@ -191,6 +191,7 @@
 
 .about-paragraphs__btn-svg {
     margin-left: 10px;
+    stroke: var(--red-color);
 }
 
 .backdrop {

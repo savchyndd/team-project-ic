@@ -5,7 +5,9 @@ body {
 
 body.modal-order-open,
 body.modal-about-open,
-body.mobile-menu-open {
+body.mobile-menu-open,
+body.modal-contacts-open,
+body.modal-contacts-franchise-open {
     overflow: hidden;
 }
 
@@ -66,5 +68,6 @@ h4 {
 
 .btn--red {
     color: var(--white-color);
+
     background-color: var(--red-color);
 }

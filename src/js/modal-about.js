@@ -4,6 +4,7 @@
       openModalAboutBtn: document.querySelector("[data-modal-about-open]"),
       closeModalAboutBtn: document.querySelector("[data-modal-about-close]"),
       modalAbout: document.querySelector("[data-modal-about]"),
+      body: document.querySelector("body"),
     };
   
     refs.openModalAboutBtn.addEventListener("click", toggleModal);
@@ -11,6 +12,6 @@
   
   function toggleModal() {
     refs.modalAbout.classList.toggle("is-hidden");
-    document.body.classList.toggle("modal-about-open");
+    refs.body.classList.toggle('body-fixed');
     }
   })();

@@ -1,9 +1,12 @@
 .gallery-section {
+
+    padding: 0 0;
+
     @media screen and (max-width: 767px) {
         background-image: linear-gradient(to bottom,
                 #FFF5F6,
-                #FFF5F6 37%,
-                #fff 20%);
+                #FFF5F6 16%,
+                #fff 16%);
         width: 100%;
     }
 
@@ -55,10 +58,10 @@
         grid-template-columns: repeat(7, 43px);
         grid-template-rows: repeat(3, 43px);
         grid-column-gap: 2.5px;
-        grid-row-gap: 2.5px;
+        // grid-row-gap: 2.5px;
         width: 100%;
         position: relative;
-        top: -18px;
+        top: 1px;
         height: 136px;
     }
 
@@ -136,6 +139,7 @@
 
         @media screen and (max-width: 767px) {
             grid-area: -4 / 2 / 3 / 3;
+            top: -2px;
         }
 
         @media screen and (min-width: 768px) {
@@ -160,6 +164,7 @@
 
         @media screen and (max-width: 767px) {
             grid-area: 3 / 3 / 4 / 4;
+            top: 3px;
         }
 
         @media screen and (min-width: 768px) {
@@ -183,7 +188,7 @@
         grid-area: 1 / 5 / 2 / 6;
 
         @media screen and (max-width: 767px) {
-            grid-area: -16 / 5 / 4 / 6;
+            grid-area: -5 / 5 / 3 / 6;
         }
 
         @media screen and (min-width: 768px) {
@@ -195,7 +200,7 @@
         grid-area: 2 / 5 / 3 / 6;
 
         @media screen and (max-width: 767px) {
-            grid-area: 2 / 5 / 11 / 6;
+            grid-area: 2 / 5 / 13 / 6;
         }
 
         @media screen and (min-width: 768px) {
@@ -207,7 +212,8 @@
         grid-area: 1 / 5 / 2 / 8;
 
         @media screen and (max-width: 767px) {
-            grid-area: -11 / 6 / 3 / 7;
+            grid-area: 1 / 6 / 2 / 7;
+            top: 10px;
         }
 
         @media screen and (min-width: 768px) {
@@ -220,6 +226,7 @@
 
         @media screen and (max-width: 767px) {
             grid-area: 1 / 6 / 15 / 7;
+            top: 9px;
         }
 
         @media screen and (min-width: 768px) {

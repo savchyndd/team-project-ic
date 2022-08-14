@@ -37,25 +37,32 @@
       </div>
     </div>
 
-    <div data-modal-about class="backdrop is-hidden">
-      <div class="backdrop-modal">
-        <p class="backdrop-modal__title">tradition and love</p>
-
-        <button data-modal-about-close class="backdrop-modal__close">
-          <svg class="backdrop-modal__svg" width="18" height="18">
+    <div class="backdrop is-hidden" data-modal-about>
+      <div class="modal-about">
+        <button type="button" class="modal__close-btn" data-modal-about-close>
+          <svg class="modal__close-icon" width="18" height="18" aria-label="Close">
             <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
-
-        <div class="about-form__modal">
-          <label class="about-form__label" for="comment">Leave your wishes</label>
-          <textarea class="about-form__comment" name="comment" id="comment" rows="5"></textarea>
+        <p class="modal-about__title-desc">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo
+          fringilla.
+        </p>
+        <div class="modal-about__text-wrapper">
+          <p class="modal__desc">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+            Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+            suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+            tincidunt.
+          </p>
+          <p class="modal__desc">
+            Aliquam erat volutpat. Aenean accumsan. Curabitur lacinia enim at ex
+            blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
+            imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a
+            feugiat urna maximus. Cras massa nibh, tincidunt.
+          </p>
         </div>
-
-        <div class="about-form__btn">
-          <button class="modal-btn" type="submit">Отправить</button>
-        </div>
-
         <ul class="modal-social__icons">
           <li class="modal-social__item">
             <a class="modal-social__link">
@@ -64,7 +71,7 @@
               </svg>
             </a>
           </li>
-
+        
           <li class="modal-social__item">
             <a class="modal-social__link">
               <svg class="modal-social__svg">
@@ -72,7 +79,7 @@
               </svg>
             </a>
           </li>
-
+        
           <li class="team-icons__item">
             <a class="modal-social__link">
               <svg class="modal-social__svg">
@@ -81,6 +88,8 @@
             </a>
           </li>
         </ul>
+      </div>
+    </div>
 
       </div>
 

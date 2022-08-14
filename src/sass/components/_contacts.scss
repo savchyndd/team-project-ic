@@ -1,5 +1,11 @@
 .section-contacts {
   background-color: var(--bg-second-color);
+
+  padding-bottom: 40px;
+
+  @include for-desktop-up {
+    padding-bottom: 120px;
+  }
 }
 
 .contacts-list {

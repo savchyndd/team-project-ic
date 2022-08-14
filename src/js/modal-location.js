@@ -18,6 +18,8 @@
   const maps = document.querySelectorAll('.map-wrap');
 
   const handleMapButtonClick = id => {
+    id = id.split('_')[0];
+    console.log(id);
     maps.forEach(map => {
       map.classList.add('display-none');
       if (map.id == id) {
@@ -25,10 +27,10 @@
       }
     });
     mapButtons.forEach(button => {
-        button.classList.remove('btn--red')
-        if (button.id == id) {
-            button.classList.add('btn--red');
-          }
+      button.classList.remove('btn--red');
+      if (button.id == id + '_btn') {
+        button.classList.add('btn--red');
+      }
     });
   };
 

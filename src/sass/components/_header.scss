@@ -69,6 +69,7 @@
 
   &:hover {
     background-color: var(--hover-color);
+    @include transition(background-color);
   }
 
   @media  screen and (max-width: 767px) {

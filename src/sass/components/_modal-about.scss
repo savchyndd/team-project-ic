@@ -6,7 +6,8 @@
 
     overflow: auto;
 
-    padding: 44px 40px;
+    width: 300px;
+    padding: 32px 28px;
 
     background-color: var(--bg-second-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -28,9 +29,11 @@
 
     @include for-tablet-up {
         max-height: 90%;
+        width: 528px;
     }
 
     @include for-desktop-up {
+        width: 700px;
         background-size: cover;
     }
 
@@ -68,9 +71,7 @@
 }
 
 .modal-about__title-desc {
-    margin-top: 0;
-    margin-bottom: 54px;
-
+    font-size: 16px;
     color: var(--black-second-color);
 }
 

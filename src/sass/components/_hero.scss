@@ -5,23 +5,21 @@
 
 .main-hero {
     position: relative;
-    padding-top: 54px;
-    padding-bottom: 77px;
     max-width: 1600px;
 }
 
 .main-hero {
     @media (min-width: 320px) {
-        height: 502px;
+        height: 444px;
         overflow: hidden;
     }
 
     @media (min-width: 768px) {
-        height: 416px;
+        height: 330px;
     }
 
     @media (min-width: 1200px) {
-        height: 100%;
+        height: 574px;
     }
 }
 
@@ -36,12 +34,14 @@
     @media (min-width: 320px) {
         width: 346px;
         height: 344px;
+        margin-top: 25px;
     }
 
     @media (min-width: 768px) {
     width: 335px;
     height: 333px;
-    margin-right: 153px;    
+    margin-right: 153px;
+    margin-top: 0; 
     }
 
     @media (min-width: 1200px) {
@@ -259,27 +259,27 @@
 
 
     @media (min-width: 320px) {
-        top: 194px;
+        top: 136px;
         
     }
     
     @media (min-width: 768px) {
-        top: 102px;
+        top: 20px;
         
     }
 
     @media (min-width: 1200px) {
-        top: 147px;
+        top: 60px;
         
     }
 }
 
-.hero-button-list {
+.hero-link-list {
     display: flex;
     gap: 12px;
 }
 
-.hero-button-list {
+.hero-link-list {
 
 
     @media (min-width: 320px) {
@@ -291,75 +291,94 @@
     }
 }
 
-.hero-button-list__products-button {
-    background-color: var(--red-color);
-    color: var(--white-color);
-    border-radius: 20px;
-}
 
-.hero-button-list__products-button {
+.hero-link-list__products {
 
 
     @media (min-width: 320px) {
+        display: flex;
         font-weight: 400;
         font-size: 8px;
         line-height: 1.3;
+        justify-content: center;
+        align-items: center;
         width: 62px;
         height: 24px;
     }
 
     @media (min-width: 768px) {
+        display: flex;
         font-weight: 400;
         font-size: 8px;
         line-height: 1.3;
-        width: 61px;
+        justify-content: center;
+        align-items: center;
+        width: 62px;
         height: 24px;
     }
 
     @media (min-width: 1200px) {
+        display: flex;
         font-weight: 400;
         font-size: 14px;
-        line-height: 1.3;
+        line-height: 1.3; 
         width: 107px;
-        height: 40px;  
+        height: 40px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-.hero-button-list__explanatory-button {
+.hero-link-list__products{
+    background-color: var(--red-color);
+    color: var(--white-color);
+    border-radius: 20px;
+}
+
+.hero-link-list__explanatory-link {
     background-color: var(--white-color);
     color: var(--red-color);
     border-radius: 20px;
 }
 
-.hero-button-list__explanatory-button {
+.hero-link-list__explanatory-link {
 
 
     @media (min-width: 320px) {
+        display: flex;
         font-weight: 400;
         font-size: 8px;
         line-height: 1.3;
         width: 82px;
         height: 24px;
+        justify-content: center;
+        align-items: center;
     }
 
     @media (min-width: 768px) {
+        display: flex;
         font-weight: 400;
         font-size: 8px;
         line-height: 1.3;
         width: 82px;
         height: 24px;
+        justify-content: center;
+        align-items: center;
     }
 
     @media (min-width: 1200px) {
+        display: flex;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.3;
         width: 138px;
         height: 40px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-.hero-button-list__explanatory-button:hover {
+.hero-link-list__explanatory-link:hover .hero-link-list__explanatory-link {
     background-color: var(--hover-color);
 }
 
@@ -369,14 +388,14 @@
     @media (min-width: 768px) {
         display: block;
         position: absolute;
-        top: 92px;
+        top: 16px;
         right: 16px;
     }
 
     @media (min-width: 1200px) {
         display: block;
         position: absolute;
-        top: 152px;
+        top: 68px;
         right: 0;
     }
 }

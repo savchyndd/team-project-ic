@@ -19,60 +19,62 @@
     @include for-desktop-up {
       width: 700px;
     }
+  }
 
-    &__field {
-      margin: 14px 0 14px;
-    }
-    &__label {
-      color: var(--grey-color);
-    }
-    &__input {
-      width: 100%;
-      padding: 10px 0;
-      box-sizing: border-box;
-      background: none;
-      outline: none;
-      resize: none;
-      border: 0;
-      border-bottom: 2px solid var(--pink-color);
-      font-weight: 700;
-      font-size: 11px;
-      line-height: 22px;
+  .franchise-form__field {
+    margin: 14px 0 14px;
+  }
 
-      @include for-tablet-up {
-        font-size: 14px;
-        line-height: 26px;
-      }
+  .franchise-form__label {
+    color: var(--grey-color);
+  }
 
-      @include for-desktop-up {
-        font-size: 16px;
-        line-height: 30px;
-      }
-      &:focus {
-        border-bottom: 2px solid var(--green-color);
-      }
+  .franchise-form__input {
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    border-bottom: 2px solid var(--pink-color);
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 22px;
+
+    @include for-tablet-up {
+      font-size: 14px;
+      line-height: 26px;
     }
 
-    &__button-wrap {
-      display: flex;
-      justify-content: flex-end;
+    @include for-desktop-up {
+      font-size: 16px;
+      line-height: 30px;
     }
+    &:focus {
+      border-bottom: 2px solid var(--green-color);
+    }
+  }
 
-    &__button {
-      padding: 8px 12px;
-      margin: 8px 0 0;
-      font-family: 'Montserrat', sans-serif;
-      border: 2px solid var(--red-color);
-      border-radius: 22px;
-      background: 0;
-      color: var(--grey-color);
-      cursor: pointer;
-      transition: all 0.3s;
+  .franchise-form__button-wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-      &:hover {
-        background: var(--red-color);
-        color: var(--white-color);
-      }
+  .franchise-form__button {
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid var(--red-color);
+    border-radius: 22px;
+    background: 0;
+    color: var(--grey-color);
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background: var(--red-color);
+      color: var(--white-color);
     }
   }
 

@@ -1,4 +1,5 @@
 (() => {
+  var btn = $('.scroll-btn');
   const refs = {
     openModalcontactsBtn: document.querySelector('[data-modal-contacts-open]'),
     closeModalcontactsBtn: document.querySelector(
@@ -6,13 +7,14 @@
     ),
     modalcontacts: document.querySelector('[data-modal-contacts]'),
   };
-
+  
   refs.openModalcontactsBtn.addEventListener('click', toggleModal);
   refs.closeModalcontactsBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.modalcontacts.classList.toggle('is-hidden');
     document.body.classList.toggle('modal-contacts-open');
+    btn.removeClass('scroll-btn--show');
   }
 
   const maps = document.querySelectorAll('.map-wrap');

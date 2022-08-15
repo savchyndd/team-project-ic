@@ -52,7 +52,7 @@
         max-width: 480px;
         height: 116px;
         font-size: 30px;
-        line-height: 1.13;
+        line-height: 1.15;
         gap: 16px;
         
     }
@@ -69,6 +69,7 @@
     @include for-tablet-up {
         font-size: 48px;
         letter-spacing: 0.06em;
+        line-height: 1.14;
     }
 
     @include for-desktop-up {
@@ -103,8 +104,16 @@
 }
 
 .footer__social-icon{
+    width: 32px;
+    height: 32px;
     fill: var(--bg-icon-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include for-tablet-up {
+        width: 34px;
+        height: 34px;
+    }
+
 
     &:hover, &:focus{
     fill: var(--red-color);
@@ -156,7 +165,6 @@
 }
 
 .footer__copyright {
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;

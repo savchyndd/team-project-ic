@@ -4,18 +4,23 @@
   background-color: var(--bg-first-color);
 
   @media screen and (min-width: 1200px) {
+    height: 87px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
     width: 100%;
-    background-color: var(--bg-first-color);
   }
 }
 
 .header {
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 37px;
+    background-color: var(--bg-first-color);
+  }
 }
 
 .header-padding {
@@ -26,7 +31,14 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 37px;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // z-index: 2;
+    // width: 100%;
+    // padding-top: 37px;
+    background-color: var(--bg-first-color);
   }
 }
 
@@ -63,7 +75,8 @@
   font-size: 16px;
   line-height: 1.31;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: var(--red-color);
     @include transition(color);
   }
@@ -76,7 +89,8 @@
   line-height: 1.31;
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: var(--hover-color);
     @include transition(background-color);
   }
@@ -92,12 +106,5 @@
 
 .site-nav__btn--icon {
   margin-left: 12px;
-
   stroke: var(--red-color);
-}
-
-.main-hero {
-  @media screen and (min-width: 1200px) {
-    margin-top: 91px;
-  }
 }

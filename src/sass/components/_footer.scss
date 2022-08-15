@@ -144,9 +144,15 @@
 .footer__copyright-box{
     display: flex;
     flex-direction: column;
+
     padding: 8px 0;
 
     border-top: 1px solid var(--grey-second-color);
+
+    @include for-mobile-only{
+        padding-top: 16px;
+        padding-bottom: 3px;
+    }
 }
 
 .footer__copyright {

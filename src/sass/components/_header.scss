@@ -53,7 +53,7 @@
   font-size: 16px;
   line-height: 1.31;
 
-  &:hover {
+  &:hover, &:focus {
     color: var(--red-color);
     @include transition(color);
   }
@@ -65,7 +65,7 @@
   line-height: 1.31;
   cursor: pointer;
 
-  &:hover {
+  &:hover, &:focus {
     background-color: var(--hover-color);
     @include transition(background-color);
   }
@@ -83,4 +83,3 @@
   margin-left: 12px;
 
   stroke: var(--red-color);
-}

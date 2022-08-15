@@ -1,6 +1,7 @@
 // Script modal about section window
 (() => {
-    const refs = {
+  var btn = $('.scroll-btn'); 
+  const refs = {
       openModalAboutBtn: document.querySelector("[data-modal-about-open]"),
       closeModalAboutBtn: document.querySelector("[data-modal-about-close]"),
       modalAbout: document.querySelector("[data-modal-about]"),
@@ -13,5 +14,6 @@
   function toggleModal() {
     refs.modalAbout.classList.toggle("is-hidden");
     refs.body.classList.toggle('body-fixed');
-    }
+    btn.removeClass('scroll-btn--show');  
+  }
   })();

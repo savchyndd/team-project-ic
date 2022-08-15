@@ -1,9 +1,10 @@
 (() => {
+  var btn = $('.scroll-btn');
   const refs = {
     openModalcontactsfranchiseBtn: document.querySelector(
       '[data-modal-contacts-franchise-open]'
-    ),
-    closeModalcontactsfranchiseBtn: document.querySelector(
+      ),
+      closeModalcontactsfranchiseBtn: document.querySelector(
       '[data-modal-contacts-franchise-close]'
     ),
     modalcontactsfranchise: document.querySelector(
@@ -17,5 +18,6 @@
   function toggleModal() {
     refs.modalcontactsfranchise.classList.toggle('is-hidden');
     document.body.classList.toggle('modal-contacts-franchise-open');
+    btn.removeClass('scroll-btn--show');
   }
 })();

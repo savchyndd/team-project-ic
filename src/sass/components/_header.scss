@@ -55,6 +55,7 @@
 
   &:hover, &:focus {
     color: var(--red-color);
+    @include transition(color);
   }
 }
 
@@ -66,6 +67,7 @@
 
   &:hover, &:focus {
     background-color: var(--hover-color);
+    @include transition(background-color);
   }
 
   @media screen and (max-width: 767px) {
@@ -77,8 +79,7 @@
   }
 }
 
-.site-nav__btn-icon {
+.site-nav__btn--icon {
   margin-left: 12px;
 
   stroke: var(--red-color);
-}

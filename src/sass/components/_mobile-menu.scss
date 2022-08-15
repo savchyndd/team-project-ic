@@ -19,7 +19,7 @@
   width: 250px;
   height: 100vh;
   z-index: 1;
-  
+
   background-color: var(--bg-first-color);
 
   transform: translateX(100%);
@@ -29,6 +29,7 @@
     width: 35%;
     height: 100vh;
   }
+
 }
 
 .menu-container.is-open {
@@ -54,6 +55,7 @@
   justify-content: center;
   cursor: pointer;
 
+
   &:hover, &:focus {
     background-color: var(--hover-color);
     @include transition(background-color);
@@ -74,6 +76,14 @@
     @include transition(color);
   }
 }
+
+
+// .mobil-nav {
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 100%;
+//   max-width: 320px;
+// }
 
 .mobil-nav__item {
   padding-left: 20px;
@@ -96,4 +106,5 @@
     color: var(--red-color);
     @include transition(color);
   }
+
 }

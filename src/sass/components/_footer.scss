@@ -2,58 +2,32 @@
     background: var(--bg-second-color);
     padding-bottom: 0px;
     padding-top: 0px;
-
-    
 }
 
-.footer__btn-list{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    margin-bottom: 40px;
-
-    @include for-mobile-only{
-        flex-direction: column;
-    }
-
+.footer__container{
     @include for-tablet-up {
-        justify-content: center;
-        gap: 14.5px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
     }
-
+    
     @include for-desktop-up {
-        gap: 12px;
+        margin-bottom: 60px;
     }
 }
 
-.footer__btn{
-    display: inline-block;
-    height: 44px;
+.footer__logo{
     padding: 0;
+    margin: 0;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
 
-    @include for-mobile-only{
-        width: 161px;
-        
-    }
+    color: var(--pink-color);
 
-    @include for-tablet-up {
-        padding: 0 37px;
-    }
-}
-
-.btn--red{
-    @include for-tablet-up {
-        padding: 0 32px;
-    }
-
-    @include for-desktop-up {
-        padding: 0 35px;
-    }
-}
-
-.footer__logo-list{
-    
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -64,23 +38,9 @@
 
     @include for-tablet-only{
         max-width: 340px;
+        height: 179px;
         gap: 12px;
     }
-
-    @include for-desktop-up {
-        display: block;
-    }
-}
-
-.footer__logo-item-first{
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.16;
-    text-transform: uppercase;
-
-    color: var(--pink-color);
 
     @include for-tablet-up {
         font-size: 26px;
@@ -89,16 +49,16 @@
     }
 
     @include for-desktop-up {
+        max-width: 480px;
+        height: 116px;
         font-size: 30px;
         line-height: 1.13;
-        margin-bottom: 16px;
+        gap: 16px;
+        
     }
 } 
 
 .footer__logo-item-second{
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 34px;
     line-height: 1.13;
     letter-spacing: 0.04em;
@@ -114,6 +74,12 @@
     @include for-desktop-up {
         font-size: 58px;
     }
+}
+
+.footer__contacts-box{
+    display:flex ;
+    flex-direction: column;
+
 }
 
 .footer__social-list {
@@ -136,10 +102,23 @@
     }
 }
 
+.footer__social-icon{
+    fill: var(--bg-icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+    fill: var(--red-color);
+    }
+
+}
+
 .footer__contacts{
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 40px;
+
+    @include for-mobile-only{
+        margin-bottom: 40px;
+    }
 }
 
 .footer__contacts__link {
@@ -148,12 +127,13 @@
     line-height: 1.86;
     color: var(--red-color);
 
-    @include for-mobile-only{
+    @include for-tablet-up{
         font-size: 14px;
     }
 
-    @include for-tablet-up {
+    @include for-desktop-up {
         font-size: 16px;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -164,9 +144,15 @@
 .footer__copyright-box{
     display: flex;
     flex-direction: column;
+
     padding: 8px 0;
 
     border-top: 1px solid var(--grey-second-color);
+
+    @include for-mobile-only{
+        padding-top: 16px;
+        padding-bottom: 3px;
+    }
 }
 
 .footer__copyright {
@@ -184,19 +170,6 @@
 
     @include for-tablet-up {
         line-height: 1.86;
-    }
-}
-
-.footer__box{
-    @include for-tablet-up {
-        display: flex;
-        margin: 40px 0;
-        justify-content: space-between;
-    }
-
-    @include for-desktop-up {
-        margin-top: 120px;
-        margin-bottom: 60px;
     }
 }
 

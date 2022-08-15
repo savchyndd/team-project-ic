@@ -1,11 +1,9 @@
 .section.review {
-
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     @media screen and (min-width: 768px) {
-
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -38,7 +36,6 @@
     align-items: flex-start;
 }
 
-
 .slick-dots {
     padding: 0;
 
@@ -50,7 +47,6 @@
         max-width: 968px;
     }
 }
-
 
 .review__slider .slick-dots {
     display: flex;
@@ -106,6 +102,7 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-radius: 0;
+    box-shadow: none;
 }
 
 .review__item {
@@ -129,20 +126,18 @@
 }
 
 .review__wrap {
-
     background-color: var(--bg-review-color);
     position: relative;
     width: 100%;
-    padding: 43px 50px 0px 50px;
+    padding: 43px 50px 0 50px;
 
     @media screen and (min-width: 768px) {
-        padding: 36px 6px 0px 6px;
+        padding: 36px 6px 0 6px;
     }
 
     @media screen and (min-width: 1200px) {
         padding: 43px 72px 0 72px
     }
-
 }
 
 .review__quote::after {
@@ -168,7 +163,6 @@
         top: 32px;
         left: 72px;
     }
-
 }
 
 .review__row {
@@ -214,22 +208,15 @@
 .review__dot {
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 16px;
+    margin: 16px auto;
     position: relative;
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: var(--dots-active-color);
-    margin-bottom: 16px;
+    background-color: #C7133E;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-top: 4px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-top: 16px;
     }
 }
 
@@ -251,7 +238,7 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: var(--dots-active-color);
+    background-color: #C7133E;
     margin-right: 10px;
 }
 

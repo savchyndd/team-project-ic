@@ -6,6 +6,10 @@
 .main-hero {
     position: relative;
     max-width: 1600px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 91px;
+    }
 }
 
 .main-hero {

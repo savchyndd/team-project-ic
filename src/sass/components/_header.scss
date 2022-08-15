@@ -17,7 +17,13 @@
   }
 
   @media screen and (min-width: 1200px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
     padding-top: 37px;
+    background-color: var(--bg-first-color);
   }
 }
 
@@ -28,6 +34,7 @@
 
 .logo {
   @media screen and (min-width: 1200px) {
+    margin-left: 16px;
     margin-right: 128px;
   }
 }
@@ -60,6 +67,7 @@
 }
 
 .site-nav__btn {
+  margin-right: 16px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
@@ -83,3 +91,10 @@
   margin-left: 12px;
 
   stroke: var(--red-color);
+}
+
+main {
+  @media screen and (min-width: 1200px) {
+    padding-top: 91px;
+  }
+}

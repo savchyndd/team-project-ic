@@ -16,7 +16,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 250px;
+  width: 100vw;
   height: 100vh;
   z-index: 1;
 
@@ -106,5 +106,4 @@
     color: var(--red-color);
     @include transition(color);
   }
-
 }

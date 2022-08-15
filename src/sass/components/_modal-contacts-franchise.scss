@@ -2,6 +2,11 @@
   .modal {
     background-color: rgb(236, 219, 221);
     min-height: auto;
+    @media screen and (max-height: 520px) {
+      top: 0;
+      margin: 20px auto;
+      transform: translate(-50%, 0);
+    }
   }
 
   .franchise-form {
@@ -89,12 +94,15 @@
     right: 0;
     background: rgb(236, 213, 216);
     color: var(--red-color);
-    width: 250px;
+    width: 150px;
     padding: 16px 4px 16px 0;
     border-radius: 22px;
     font-size: 12px;
     box-shadow: 10px 10px 40px -14px #000;
     text-align: center;
+    @include for-tablet-up {
+      width: 250px;
+    }
   }
 
   .franchise-contacts__link {

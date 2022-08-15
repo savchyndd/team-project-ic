@@ -1,0 +1,54 @@
+.scroll-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+
+    background-color: var(--bg-first-color);
+    border-radius: 50px;
+
+
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    // @include transition(background-color, 300ms, ease);
+    // @include transition(opacity, 500ms, ease);
+    // @include transition(visibility, 500ms, ease);
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: var(--bg-menu-second-color);
+    }
+
+    &:active {
+        background-color: var(--dots-active-color);
+    }
+
+    &--show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+
+.scroll-btn__icon {
+    transform: rotate(270deg);
+    fill: var(--red-color);
+
+    .scroll-btn:hover & {
+        fill: var(--white-color);
+    }
+}

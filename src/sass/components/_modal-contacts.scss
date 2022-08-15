@@ -4,6 +4,16 @@
   }
   .modal {
     background-color: #f3d6da;
+    @media screen and (max-height: 600px) {
+      top: 0;
+      margin: 20px auto;
+      transform: translate(-50%, 0);
+    }
+    @media screen and (min-width: 1200px) and (max-height: 750px) {
+      top: 0;
+      margin: 20px auto;
+      transform: translate(-50%, 0);
+    }
   }
 
   .modal-content {
@@ -19,13 +29,13 @@
 
   .map-wrap {
     width: 270px;
-    height: 400px;
+    height: 300px;
     @include for-tablet-up {
       width: 700px;
     }
     @include for-desktop-up {
-      width: 900px;
-      height: 650px;
+      width: 800px;
+      height: 550px;
     }
     iframe {
       border-radius: 25px;

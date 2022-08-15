@@ -7,6 +7,17 @@
 .header {
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    // right: 0;
+    z-index: 2;
+    width: 100%;
+    padding-top: 37px;
+    background-color: var(--bg-first-color);
+  }
 }
 
 .header-padding {
@@ -20,6 +31,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    // right: 0;
     z-index: 2;
     width: 100%;
     padding-top: 37px;
@@ -93,8 +105,8 @@
   stroke: var(--red-color);
 }
 
-main {
+.main-hero {
   @media screen and (min-width: 1200px) {
-    padding-top: 91px;
+    margin-top: 91px;
   }
 }

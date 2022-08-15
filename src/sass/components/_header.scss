@@ -1,23 +1,21 @@
-.header-decor {
+.header-section {
   padding-top: 0;
   padding-bottom: 0;
   background-color: var(--bg-first-color);
-}
-
-.header {
-  display: flex;
-  align-items: center;
 
   @media screen and (min-width: 1200px) {
     position: fixed;
     top: 0;
     left: 0;
-    // right: 0;
     z-index: 2;
     width: 100%;
-    padding-top: 37px;
     background-color: var(--bg-first-color);
   }
+}
+
+.header {
+  display: flex;
+  align-items: center;
 }
 
 .header-padding {
@@ -28,14 +26,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    // right: 0;
-    z-index: 2;
-    width: 100%;
     padding-top: 37px;
-    background-color: var(--bg-first-color);
   }
 }
 

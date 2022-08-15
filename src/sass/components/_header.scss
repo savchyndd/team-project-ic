@@ -1,13 +1,10 @@
-.header-decor {
+.header-section {
   padding-top: 0;
   padding-bottom: 0;
   background-color: var(--bg-first-color);
- 
+
   @media screen and (min-width: 1200px) {
-    // height: 87px;
     position: relative;
-    // top: 0;
-    // left: 0;
     z-index: 1;
     width: 100%;
     background-color: transparent;
@@ -20,8 +17,6 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 37px;
-    // background-color: var(--bg-first-color);
-    // background-color: transparent;
   }
 }
 
@@ -30,18 +25,6 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // z-index: 2;
-    // width: 100%;
-    // padding-top: 37px;
-    // background-color: var(--bg-first-color);
-    // background-color: transparent;
   }
 }
 
@@ -78,7 +61,8 @@
   font-size: 16px;
   line-height: 1.31;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: var(--red-color);
     @include transition(color);
   }
@@ -91,16 +75,16 @@
   line-height: 1.31;
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: var(--hover-color);
     @include transition(background-color);
   }
 
   @media screen and (max-width: 767px) {
     display: none;
-    
   }
-  
+
   @media screen and (min-width: 767px) {
     margin-right: 0;
   }
@@ -112,6 +96,5 @@
 
 .site-nav__btn--icon {
   margin-left: 12px;
-
   stroke: var(--red-color);
 }

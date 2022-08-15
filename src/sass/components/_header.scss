@@ -4,12 +4,10 @@
   background-color: var(--bg-first-color);
 
   @media screen and (min-width: 1200px) {
-    height: 87px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
     width: 100%;
+    background-color: transparent;
   }
 }
 
@@ -19,7 +17,6 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 37px;
-    background-color: var(--bg-first-color);
   }
 }
 
@@ -28,17 +25,6 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // z-index: 2;
-    // width: 100%;
-    // padding-top: 37px;
-    background-color: var(--bg-first-color);
   }
 }
 
@@ -97,6 +83,10 @@
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 767px) {
+    margin-right: 0;
   }
 
   @media screen and (min-width: 1200px) {

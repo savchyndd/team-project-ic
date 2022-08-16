@@ -5,7 +5,8 @@
 }
 
 .advantages__list {
-    display: grid;
+    display: inline-grid;
+
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 32px;
@@ -53,12 +54,9 @@
 }
 
 .advantages__size {
-    font-family: 'Titan One';
-    font-weight: 400;
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: var(--red-color);
     margin-bottom: 19px;
 

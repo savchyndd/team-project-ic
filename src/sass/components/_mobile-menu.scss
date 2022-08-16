@@ -16,7 +16,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 100vw;
+  width: 250px;
   height: 100vh;
   z-index: 1;
 
@@ -26,10 +26,9 @@
   @include transition(transform);
 
   @media screen and (min-width: 768px) {
-    width: 35%;
+    width: 254px;
     height: 100vh;
   }
-
 }
 
 .menu-container.is-open {
@@ -41,12 +40,23 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  fill: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    right: 32px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--red-color);
+    @include transition(color);
+  }
 }
 
 .mobil-nav__btn {
   padding: 16px;
-  margin-top: 26px;
-  margin-bottom: 19px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -55,6 +65,10 @@
   justify-content: center;
   cursor: pointer;
 
+  @media screen and (min-width: 768px) {
+    margin-top: 38px;
+    max-width: 186px;
+  }
 
   &:hover, &:focus {
     background-color: var(--hover-color);
@@ -63,27 +77,14 @@
 }
 
 .mobil-nav__btn--icon {
-  margin-left: 12px;
+  margin-left: 28px;
 
   stroke: var(--red-color);
-}
 
-.mobil-icon--close {
-  fill: var(--white-color);
-
-  &:hover, &:focus {
-    fill: var(--red-color);
-    @include transition(color);
+  @media screen and (min-width: 768px) {
+    margin-left: 21px;
   }
 }
-
-
-// .mobil-nav {
-//   margin-left: auto;
-//   margin-right: auto;
-//   width: 100%;
-//   max-width: 320px;
-// }
 
 .mobil-nav__item {
   padding-left: 20px;

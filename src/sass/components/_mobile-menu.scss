@@ -1,6 +1,6 @@
 .menu-toggle {
   margin-left: auto;
-  background-color: var(--bg-first-color);
+  background-color: var(--bg-menu-color);
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
@@ -16,18 +16,25 @@
   position: fixed;
   top: 0;
   right: 0;
+  padding-top: 60px;
   width: 250px;
   height: 100vh;
   z-index: 4;
+  overflow-y: scroll;
 
-  background-color: var(--bg-first-color);
+  background-color: var(--bg-menu-first-color);
 
   transform: translateX(100%);
   @include transition(transform);
 
   @media screen and (min-width: 768px) {
+    padding-top: 58px;
     width: 254px;
     height: 100vh;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }
 
@@ -36,37 +43,39 @@
   @include transition(transform);
 }
 
-.mobil-icon--close {
+.menu-toggle--close {
   position: absolute;
   top: 20px;
   right: 20px;
-  fill: var(--white-color);
 
   @media screen and (min-width: 768px) {
+    margin-right: 0;
     right: 32px;
   }
+}
+
+.mobil-icon--close {
+  stroke: var(--white-color);
+  @include transition(fill);
 
   &:hover,
   &:focus {
-    fill: var(--red-color);
-    @include transition(color);
+    stroke: var(--red-color);
   }
 }
 
 .mobil-nav__btn {
-  padding: 16px;
-  margin-top: 40px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   max-width: 209px;
+  height: 44px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
-    margin-top: 38px;
     max-width: 186px;
   }
 
@@ -102,6 +111,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
+  @include transition(color);
 
   &:hover, &:focus {
     color: var(--red-color);

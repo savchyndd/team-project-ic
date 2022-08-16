@@ -1,36 +1,72 @@
-<section class="section section-container">
+<section class="section section-container" id="about">
   <div class="container about-container">
     <span class="about-container__subtitle">tradition and love</span>
     <h2 class="about-container__title">how it’s made?</h2>
 
     <div class="about-container__wrapper">
       <picture>
-        <source srcset="./images/about/cow_mobile.png 1x,
-        ./images/about/about@2x/cow_mobile@2x.png 2x" type="image/png" media="(max-width: 767px)">
+        <source
+          srcset="
+            ./images/about/cow_mobile.png             1x,
+            ./images/about/about@2x/cow_mobile@2x.png 2x
+          "
+          type="image/png"
+          media="(max-width: 767px)"
+        />
 
-        <source srcset="./images/about/cow_tablet.png 1x,
-        ./images/about/about@2x/cow_tablet@2x.png 2x" type="image/png"
-          media="(min-width: 768px) and (max-width: 1199px)">
+        <source
+          srcset="
+            ./images/about/cow_tablet.png             1x,
+            ./images/about/about@2x/cow_tablet@2x.png 2x
+          "
+          type="image/png"
+          media="(min-width: 768px) and (max-width: 1199px)"
+        />
 
-        <source srcset="./images/about/cow_desktop.png 1x,
-        ./images/about/about@2x/cow_desktop@2x.png 2x" type="image/png" media="(min-width: 1200px)">
-        <img class="wrapper-img" src="./images/about/cow_desktop.png" alt="cow">
+        <source
+          srcset="
+            ./images/about/cow_desktop.png             1x,
+            ./images/about/about@2x/cow_desktop@2x.png 2x
+          "
+          type="image/png"
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="wrapper-img"
+          src="./images/about/cow_desktop.png"
+          alt="cow"
+        />
       </picture>
 
       <div class="about-container__paragraphs">
         <div class="about-paragraphs">
-          <p class="about-paragraphs__main">Fusce ut velit laoreet, tempus arcu eu, molestie tortor.
-            Nam vel justo cursus, faucibus lorem eget, egestas eros.
-            Maecenas eleifend erat at justo fringilla.</p>
-          <p class="about-paragraphs__description">Curabitur lacinia enim at ex blandit, vel pellentesque odio
-            elementum. Mauris rhoncus orci in imperdiet placerat.
-            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-            maximus. Cras massa nibh, tincidunt.</p>
-          <p class="about-paragraphs__description">Aliquam erat volutpat. Aenean accumsan.</p>
+          <p class="about-paragraphs__main">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+            erat at justo fringilla.
+          </p>
+          <p class="about-paragraphs__description">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt.
+          </p>
+          <p class="about-paragraphs__description">
+            Aliquam erat volutpat. Aenean accumsan.
+          </p>
         </div>
 
-        <button class="about-paragraphs__btn" data-modal-about-open type="button"><span class="btn-text">Read more</span>
-          <svg class="btn__icon about-paragraphs__btn-svg" width="10" height="10">
+        <button
+          class="about-paragraphs__btn"
+          data-modal-about-open
+          type="button"
+        >
+          <span class="btn-text">Read more</span>
+          <svg
+            class="btn__icon about-paragraphs__btn-svg"
+            width="10"
+            height="10"
+          >
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
         </button>
@@ -40,27 +76,32 @@
     <div class="backdrop is-hidden" data-modal-about>
       <div class="modal-about">
         <button type="button" class="modal__close-btn" data-modal-about-close>
-          <svg class="modal__close-icon" width="18" height="18" aria-label="Close">
+          <svg
+            class="modal__close-icon"
+            width="18"
+            height="18"
+            aria-label="Close"
+          >
             <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
         <p class="modal-about__title-desc">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo
-          fringilla.
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
         </p>
         <div class="modal-about__text-wrapper">
           <p class="modal__desc">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-            Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-            suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-            tincidunt.
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt.
           </p>
           <p class="modal__desc">
             Aliquam erat volutpat. Aenean accumsan. Curabitur lacinia enim at ex
             blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-            imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a
-            feugiat urna maximus. Cras massa nibh, tincidunt.
+            imperdiet placerat. Vestibulum euismod nisl suscipit ligula
+            volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
           </p>
         </div>
         <ul class="modal-social__icons">
@@ -90,6 +131,5 @@
         </ul>
       </div>
     </div>
-
   </div>
 </section>

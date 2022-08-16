@@ -1,10 +1,39 @@
 .section-contacts {
   background-color: var(--bg-second-color);
-
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 362px,
+    rgba(255, 245, 246, 1) 362px,
+    rgba(255, 245, 246, 1) 100%
+  );
   padding-bottom: 40px;
 
+  @include for-tablet-up {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 358px,
+      rgba(255, 245, 246, 1) 358px,
+      rgba(255, 245, 246, 1) 100%
+    );
+  }
+
   @include for-desktop-up {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 159px,
+      rgba(255, 245, 246, 1) 159px,
+      rgba(255, 245, 246, 1) 100%
+    );
     padding-bottom: 120px;
+  }
+
+  .container {
+    @include for-tablet-up {
+      padding: 0 16px;
+    }
   }
 }
 
@@ -34,7 +63,6 @@
 
   @include for-tablet-up {
     width: calc(33.3333333333% - 20px);
-    height: 538px;
     padding: 40px 32px;
   }
 
@@ -45,11 +73,12 @@
 
 .contacts-item__label {
   padding: 0px 25px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   background: var(--brown-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 12px;
+  /* number value of l-h breaks height of element */
   line-height: 16px;
   display: inline-block;
   text-align: center;
@@ -62,12 +91,9 @@
 
   @include for-tablet-up {
     font-size: 16px;
-    line-height: 30px;
-  }
-
-  @include for-desktop-up {
-    font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
+    border-radius: 6px;
+    height: 28px;
   }
 }
 
@@ -75,44 +101,43 @@
   font-family: 'DM Sans', serif;
   font-weight: 500;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 1.83;
   letter-spacing: 0.04em;
   color: var(--black-color);
 
   @include for-tablet-up {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.857;
   }
 
   @include for-desktop-up {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
   }
 }
 
 .contacts-item__description {
   margin-top: 8px;
-  margin-bottom: 24px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
   color: var(--grey-color);
-  box-sizing: border-box;
   background: none;
-  outline: none;
-  resize: none;
-  border: 0;
   border-bottom: 1px solid var(--grey-second-color);
   padding-bottom: 24px;
 
   @include for-tablet-up {
     font-size: 14px;
-    line-height: 23px;
+    line-height: 1.66;
+    margin-top: 12px;
+    padding-bottom: 32px;
   }
 
   @include for-desktop-up {
     font-size: 16px;
-    line-height: 29px;
+    line-height: 1.81;
+    margin-top: 8px;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -121,21 +146,26 @@
   margin-bottom: 0px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 1.83;
   color: var(--black-color);
-
-  &--last {
-    margin-top: 8px;
-  }
 
   @include for-tablet-up {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.85;
+    margin-top: 32px;
   }
 
   @include for-desktop-up {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
+    letter-spacing: 0.04em;
+  }
+
+  &--last {
+    margin-top: 8px;
+    @include for-tablet-up {
+      margin-top: 12px;
+    }
   }
 }
 
@@ -143,28 +173,26 @@
   margin: 0px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 1.83;
   color: var(--pink-color);
-
-  &--last {
-    margin-bottom: 24px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    border: 0;
-    border-bottom: 1px solid var(--grey-second-color);
-    padding-bottom: 24px;
-  }
 
   @include for-tablet-up {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.85;
   }
 
   @include for-desktop-up {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
+  }
+
+  &--last {
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--grey-second-color);
+    padding-bottom: 24px;
+    @include for-tablet-up {
+      padding-bottom: 32px;
+    }
   }
 }
 
@@ -173,21 +201,21 @@
   margin-top: 24px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
   color: var(--grey-color);
-
-  &--email {
-    margin-top: 0px;
-  }
 
   @include for-tablet-up {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.85;
+    margin-top: 32px;
   }
 
   @include for-desktop-up {
     font-size: 16px;
-    line-height: 29px;
+    line-height: 1.81;
+  }
+  &--email {
+    margin-top: 0px;
   }
 }
 
@@ -202,21 +230,26 @@
   @include for-tablet-up {
     flex-direction: row;
     margin-top: 60px;
-    margin-right: 15px;
+    gap: 14.5px;
+  }
+  @include for-desktop-up {
+    gap: 12px;
   }
 }
 
 .contacts__btn {
-  width: 162px;
   height: 44px;
+  /* same as height for vertical alignment*/
+  width: 161px;
+  padding: 0;
   line-height: 44px;
   justify-content: center;
-  padding: 0;
-  gap: 8px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
+  gap: 13px;
   cursor: pointer;
+  @include for-tablet-up {
+    padding: 0 35px;
+    width: auto;
+  }
 }
 .contacts__btn-icon {
   margin-top: 2px;

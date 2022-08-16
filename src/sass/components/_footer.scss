@@ -72,7 +72,6 @@
 .footer__contacts-box{
     display:flex;
     flex-direction: column;
-
 }
 
 .footer__social-list {
@@ -107,14 +106,12 @@
 }
 
 .footer__social-icon{
-    width: 32px;
-    height: 32px;
     fill: var(--bg-icon-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include for-tablet-up {
-        width: 34px;
-        height: 34px;
+    @include for-mobile-only {
+        width: 32px;
+        height: 32px;
     }
 }
 

@@ -134,6 +134,8 @@
 
 .bio-eco {
   display: none;
+  position: relative;
+  overflow: hidden;
 
   @include for-tablet-up {
     display: block;
@@ -416,4 +418,23 @@
 
 .hero-numbers__list-numbers-ll {
   position: relative;
+}
+
+
+.hero__desc-overlay {
+  overflow-y: scroll;
+  position: absolute;
+  top: 100px;
+  right: -5px;
+  margin: 0;
+  transform: translateX(110%);
+
+  max-width: 100px;
+  height: 78px;
+  padding: 5px;
+
+  color: var(--white-color);
+  border-radius: 5px;
+  @include transition(transform);
+
 }

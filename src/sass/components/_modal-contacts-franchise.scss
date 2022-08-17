@@ -1,7 +1,11 @@
 [data-modal-contacts-franchise] {
+  transition: visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
   .modal {
     background-color: rgb(236, 219, 221);
     min-height: auto;
+
     @media screen and (max-height: 520px) {
       top: 0;
       margin: 20px auto;
@@ -56,6 +60,7 @@
       font-size: 16px;
       line-height: 1.875;
     }
+
     &:focus {
       border-bottom: 2px solid var(--green-color);
     }
@@ -100,6 +105,7 @@
     font-size: 12px;
     box-shadow: 10px 10px 40px -14px #000;
     text-align: center;
+
     @include for-tablet-up {
       width: 250px;
     }

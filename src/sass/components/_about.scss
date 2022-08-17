@@ -2,7 +2,7 @@
     background-image: url(../images/about-bg/adv-bg_mobile.png);
     background-repeat: no-repeat;
     background-size: 280px;
-    background-position: 50% 75%;
+    background-position: 50% 76%;
     background-color: var(--bg-second-color);
     padding-bottom: 40px;
 
@@ -23,9 +23,9 @@
 
     @media (min-width: 1200px) {
         background-image: url(../images/about-bg/adv-bg_desktop.png);
-        background-size: contain;
+        background-size: 1200px;
         background-repeat: no-repeat;
-        background-position: 50% 55%;
+        background-position: 50% 86%;
         padding-bottom: 60px;
     }
 
@@ -126,6 +126,10 @@
 
 .about-paragraphs p:first-child {
     margin-top: 0;
+
+    @media(min-width: 1200px) {
+        margin-top: 90px;
+    }
 }
 
 .about-container__paragraphs {

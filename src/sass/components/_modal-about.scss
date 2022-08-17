@@ -1,3 +1,8 @@
+[data-modal-about] {
+    transition: visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-about {
     position: absolute;
     top: 50%;
@@ -36,8 +41,6 @@
         width: 700px;
         background-size: cover;
     }
-
-
 }
 
 @include for-mobile-up {

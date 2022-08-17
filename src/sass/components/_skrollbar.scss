@@ -1,16 +1,29 @@
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track,
+.products__desc-overlay::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: transparent;
     border-radius: 10px;
 }
 
-body::-webkit-scrollbar {
+.products__desc-overlay::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 transparent;
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar,
+.products__desc-overlay::-webkit-scrollbar {
     width: 10px;
     background-color: transparent;
 }
 
+.products__desc-overlay::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+}
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+.products__desc-overlay::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: var(--bg-menu-first-color);
     background-image: -webkit-linear-gradient(45deg,

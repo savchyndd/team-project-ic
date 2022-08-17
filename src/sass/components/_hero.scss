@@ -3,9 +3,11 @@
   background-color: var(--bg-first-color);
   overflow: hidden;
   margin-top: -1px;
+
   @include for-tablet-up {
     overflow: visible;
   }
+
   @include for-desktop-up {
     margin-top: -87px;
     padding-top: 87px;
@@ -19,36 +21,78 @@
 
   @include for-tablet-up {
     height: 330px;
+    padding-top: 20px;
   }
 
   @include for-desktop-up {
     height: 574px;
+    padding-top: 60px;
   }
 }
 
 .big-circle {
   background-color: var(--pink-color);
   border-radius: 50%;
-  margin-top: -1px;
   width: 346px;
   height: 344px;
-  margin-left: 11px;
+  position: relative;
+  top: 0;
+  left: 16px;
+
+  // margin-top: 0px;
+  // margin-left: 16px;
 
   @include for-tablet-up {
     width: 335px;
     height: 333px;
-    margin: 0;
-    position: relative;
-    top: -55px;
-    left: 200px;
+
+    top: -59px;
+    left: 216px;
+
+    // margin: 0;
   }
 
   @include for-desktop-up {
     width: 534px;
     height: 534px;
-    top: -60px;
+
+    top: -95px;
     left: 505px;
     z-index: 0;
+  }
+}
+
+.main-ice-cream {
+  position: absolute;
+  top: 9;
+
+  @include for-mobile-only {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  // width: 171px;
+  // height: 410px;
+  // bottom: 0px;
+  // margin-left: 81px;
+
+  @include for-tablet-up {
+    top: 33;
+    left: 74;
+
+    width: 143px;
+    // height: 334px;
+    // margin-left: 74px;
+    // bottom: -27px;
+  }
+
+  @include for-desktop-up {
+    width: 236px;
+    top: 56;
+    left: 119;
+    //   height: 557px;
+    // margin-left: 119px;
+    // bottom: -75px;
   }
 }
 
@@ -69,7 +113,7 @@
     right: 32px;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     width: 304px;
     height: 241px;
     right: 16px;
@@ -82,7 +126,7 @@
     height: 154px;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     width: 213px;
     height: 216px;
   }
@@ -99,7 +143,7 @@
     bottom: 16px;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     bottom: 60px;
   }
 }
@@ -112,7 +156,7 @@
     line-height: 1.5em;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     width: 200px;
     height: 78px;
     font-weight: 400;
@@ -124,9 +168,9 @@
 .block-button__hero-button {
   border-radius: 50%;
   background-color: white;
-}
 
-.block-button__hero-button {
+  cursor: pointer;
+
   @include for-tablet-up {
     justify-content: center;
     align-items: center;
@@ -135,7 +179,7 @@
     display: flex;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     justify-content: center;
     align-items: center;
     width: 26px;
@@ -144,58 +188,42 @@
   }
 }
 
+.block-button__hero-button:hover,
+.block-button__hero-button:focus {
+  fill: var(--white-color);
+  background-color: var(--red-color);
+}
+
+
 .icon-arrow {
   @include for-tablet-up {
     width: 5px;
     height: 7px;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     width: 10px;
     height: 14px;
   }
 }
 
-.main-ice-cream {
-  position: absolute;
-  bottom: 0px;
-}
-
-.main-ice-cream {
-  width: 171px;
-  height: 410px;
-  margin-left: 81px;
-
-  @include for-tablet-up {
-    width: 143px;
-    height: 334px;
-    margin-left: 74px;
-    bottom: -27px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 236px;
-    height: 557px;
-    margin-left: 119px;
-    bottom: -75px;
-  }
-}
-
 .main-header__hero-header {
+  margin-bottom: 20px;
+
   max-width: 218px;
   max-height: 106px;
+
   font-size: 26px;
-  line-height: 1.14;
   letter-spacing: 0.04em;
-  margin-bottom: 20px;
 
   @include for-tablet-up {
     max-width: 162px;
     max-height: 80px;
     font-size: 22px;
+    line-height: 1.14;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     max-width: 277px;
     max-height: 137px;
     font-weight: 400;
@@ -209,16 +237,12 @@
   font-size: 48px;
   line-height: 0.9;
 
-  @media (min-width: 768px) {
-    color: var(--red-color);
+  @include for-tablet-up {
     font-size: 34px;
-    line-height: 0.9;
   }
 
-  @media (min-width: 1200px) {
-    color: var(--red-color);
+  @include for-desktop-up {
     font-size: 58px;
-    line-height: 0.9;
   }
 }
 
@@ -227,31 +251,28 @@
 }
 
 .main-header {
-  @media (min-width: 320px) {
+  @include for-mobile-up {
     top: 136px;
   }
 
-  @media (min-width: 768px) {
+  @include for-tablet-up {
     top: 20px;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     top: 60px;
   }
 }
 
 .hero-link-list {
   display: flex;
-  gap: 12px;
-}
-
-.hero-link-list {
   gap: 8px;
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     gap: 12px;
   }
 }
+
 
 .hero-link-list__products {
   display: flex;
@@ -263,7 +284,7 @@
   width: 62px;
   height: 24px;
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     font-size: 14px;
     width: 107px;
     height: 40px;
@@ -292,14 +313,17 @@
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 1200px) {
+
+  @include for-desktop-up {
     font-size: 14px;
     width: 138px;
     height: 40px;
   }
 }
 
-.hero-link-list__explanatory-link:hover .hero-link-list__explanatory-link {
+.hero-link-list__explanatory-link:hover .hero-link-list__explanatory-link,
+.hero-link-list__explanatory-link:focus .hero-link-list__explanatory-link {
+  color: var(--red-color);
   background-color: var(--hover-color);
 }
 
@@ -309,11 +333,11 @@
   @include for-tablet-up {
     display: block;
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 18px;
+    right: 42px;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     display: block;
     position: absolute;
     top: 68px;
@@ -328,6 +352,7 @@
   color: var(--red-color);
   margin: 0;
   z-index: 0;
+
   &:after {
     content: '';
     position: absolute;
@@ -347,11 +372,12 @@
     letter-spacing: 0.04em;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     font-weight: 400;
     font-size: 46px;
     line-height: 1.14;
     letter-spacing: 0.04em;
+
     &:after {
       width: 30px;
       height: 30px;
@@ -373,7 +399,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: 1200px) {
+  @include for-desktop-up {
     font-size: 14px;
   }
 }

@@ -437,4 +437,10 @@
   border-radius: 5px;
   @include transition(transform);
 
+  @include for-desktop-up {
+    top: 130px;
+    right: -18px;
+    max-width: 189px;
+  }
+
 }

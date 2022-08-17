@@ -146,6 +146,8 @@
     left: 12px;
     transform: translateY(-50%);
 
+    @include transition(fill);
+
     .form-order__input-thumb:hover &,
     .form-order__input:focus+& {
         fill: var(--red-color);

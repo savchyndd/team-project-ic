@@ -2,7 +2,7 @@ window.onscroll = function () {
     myFunction();
 };
 
-var header = document.getElementById('home');
+var header = document.getElementById('heder');
 var headerScroll = $('.header-section');
 var headerPadding = $('.header');
 var headerPaddingPadd = $('.header-padding');

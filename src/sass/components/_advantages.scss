@@ -2,6 +2,10 @@
     background-color: var(--bg-second-color);
     padding-top: 0px;
     padding-bottom: 60px;
+
+    @include for-desktop-up {
+        padding-top: 40px;
+    }
 }
 
 .advantages__list {

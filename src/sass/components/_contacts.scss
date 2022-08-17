@@ -1,32 +1,26 @@
 .section-contacts {
   background-color: var(--bg-second-color);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 362px,
-    rgba(255, 245, 246, 1) 362px,
-    rgba(255, 245, 246, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 362px,
+      rgba(255, 245, 246, 1) 362px,
+      rgba(255, 245, 246, 1) 100%);
   padding-bottom: 40px;
 
   @include for-tablet-up {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 358px,
-      rgba(255, 245, 246, 1) 358px,
-      rgba(255, 245, 246, 1) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 358px,
+        rgba(255, 245, 246, 1) 358px,
+        rgba(255, 245, 246, 1) 100%);
   }
 
   @include for-desktop-up {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 159px,
-      rgba(255, 245, 246, 1) 159px,
-      rgba(255, 245, 246, 1) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 159px,
+        rgba(255, 245, 246, 1) 159px,
+        rgba(255, 245, 246, 1) 100%);
     padding-bottom: 120px;
   }
 
@@ -163,6 +157,7 @@
 
   &--last {
     margin-top: 8px;
+
     @include for-tablet-up {
       margin-top: 12px;
     }
@@ -190,6 +185,7 @@
     margin-bottom: 24px;
     border-bottom: 1px solid var(--grey-second-color);
     padding-bottom: 24px;
+
     @include for-tablet-up {
       padding-bottom: 32px;
     }
@@ -214,6 +210,7 @@
     font-size: 16px;
     line-height: 1.81;
   }
+
   &--email {
     margin-top: 0px;
   }
@@ -232,6 +229,7 @@
     margin-top: 60px;
     gap: 14.5px;
   }
+
   @include for-desktop-up {
     gap: 12px;
   }
@@ -246,16 +244,43 @@
   justify-content: center;
   gap: 13px;
   cursor: pointer;
+  transition: ease-out 0.4s;
+
   @include for-tablet-up {
     padding: 0 35px;
     width: auto;
   }
 }
+
 .contacts__btn-icon {
   margin-top: 2px;
   stroke: var(--white-color);
+  transition: ease-out 0.4s;
+
   &--red {
     margin-top: 2px;
     stroke: var(--red-color);
+    transition: ease-out 0.4s;
+  }
+}
+
+.contacts__btn:hover,
+.contacts__btn:focus {
+  box-shadow: inset 200px 0 0 0 #d41443;
+  color: var(--white-color);
+  transition: ease-out 0.4s;
+  cursor: pointer;
+
+  &.btn--red {
+    box-shadow: inset 200px 0 0 0 #ffffff;
+    color: var(--red-color);
+  }
+
+  .contacts__btn-icon {
+    stroke: var(--red-color);
+
+    &--red {
+      stroke: var(--white-color);
+    }
   }
 }

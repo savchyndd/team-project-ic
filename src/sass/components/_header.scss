@@ -11,6 +11,8 @@
   }
 }
 
+
+
 .header {
   display: flex;
   align-items: center;
@@ -103,4 +105,15 @@
 .site-nav__btn--icon {
   margin-left: 12px;
   stroke: var(--red-color);
+}
+
+.header__scroll {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: var(--bg-first-color);
 }

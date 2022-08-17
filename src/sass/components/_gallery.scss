@@ -10,27 +10,36 @@
     @media screen and (max-width: 767px) {
         background-image: linear-gradient(to bottom,
                 #FFF5F6,
-                #FFF5F6 10%,
-                #fff 10%);
+                #FFF5F6 17%,
+                #fff 17%);
         width: 100%;
+        padding-top: 4px;
     }
 
 
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(to bottom,
                 #FFF5F6,
-                #FFF5F6 13%,
-                #fff 13%);
+                #FFF5F6 40%,
+                #fff 40%);
         width: 100%;
+        padding-top: 4px;
     }
 
     @media screen and (min-width: 1200px) {
         background-image: linear-gradient(to bottom,
                 #FFF5F6,
-                #FFF5F6 14%,
-                #fff 14%);
+                #FFF5F6 29%,
+                #fff 29%);
 
         width: 100%;
+        padding-top: 60px;
+    }
+}
+
+.gallery-container {
+    @include for-mobile-tablet-only {
+        padding: 0;
     }
 }
 
@@ -79,7 +88,7 @@
 }
 
 .grid__item--two {
-    grid-area: 4 / 1 / span 3 / span 1;
+    grid-area: 3 / 2 / span 3 / span 1;
 
     @include for-mobile-lower {
 
@@ -99,23 +108,27 @@
 }
 
 .grid__item--three {
-    grid-area: 3 / 2 / span 3 / span 1;
-}
-
-.grid__item--four {
     grid-area: 6 / 2 / span 3 / span 1;
 }
 
-.grid__item--five {
+.grid__item--four {
+    
     grid-area: 7 / 3 / span 3 / span 1;
 }
 
+.grid__item--five {
+    
+    grid-area: 4 / 1 / span 3 / span 1;
+}
+
 .grid__item--six {
-    grid-area: 6 / 5 / span 3 / span 1;
+    grid-area: 3 / 5 / span 3 / span 1;
+    
 }
 
 .grid__item--seven {
-    grid-area: 3 / 5 / span 3 / span 1;
+    
+    grid-area: 6 / 5 / span 3 / span 1;
 }
 
 .grid__item--eight {
